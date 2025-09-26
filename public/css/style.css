@@ -1,0 +1,130 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    background-color: white;
+    height: 4rem;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    /* font-weight: 700 !important; */
+    color: black !important;
+}
+
+/* FOOTER */
+.f-info {
+    height: 8rem;
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    margin-right: 0.75rem;
+}
+
+.f-info-socials,
+.f-info-brand,
+.f-info-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+/* CARD */
+
+.listing-card {
+
+    border: none !important;
+    margin-bottom: 2rem;
+    /* margin-right: 2px !important; */
+    padding-top: 1rem;
+    padding-right: 2rem;
+    /* width: 20rem !important; */
+}
+
+.card-img-top {
+    height: 20rem;
+    /* width: 15rem; */
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 1rem !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: black;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* SHOW PAGE */
+.show-img {
+    object-fit: fill !important;
+    height: 30rem !important;
+    width: 40rem !important;
+}
+
+.show-btn {
+    display: flex;
+}
+
+/* MAP */
+#map {
+    height: 400px;
+    width: 80vh;
+}
