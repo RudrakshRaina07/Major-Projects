@@ -20,6 +20,8 @@ const User = require("./models/user.js");
 const userRouter = require("./routes/user.js");
 const dbUrl = process.env.ATLASDB_URL;
 
+const PORT = process.env.PORT || 8080;
+
 const store = MongoStore.create({
     mongoUrl: dbUrl,
     crypto: {
@@ -96,6 +98,6 @@ app.use((err,req,res,next) => {
     res.status(statusCode).render("error.ejs", { message});
 });
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
     console.log("listening on port 8080")
 });  
