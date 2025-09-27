@@ -24,7 +24,7 @@ let response =await geocodingClient.forwardGeocode({
 
     let url = req.file.path;
     let filename = req.file.filename;
-    let newListing = new Listing(req.body.listing);
+    let newListing = new Listing(...req.body.listing);
     newListing.owner = req.user._id;
     newListing.image = { url, filename};
     newListing.geometry = response.body.features[0].geometry;
