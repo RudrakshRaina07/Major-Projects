@@ -6,13 +6,13 @@
         flex-wrap: nowrap;
         align-items: center;
     }
-    .filter{
+    .filter carousel-item{
         text-align: center;
         margin-top: 2rem;
         margin-right: 1.5rem;
         opacity: 0.7;
     }
-    .filter:hover {
+    .filter carousel-item:hover {
         opacity: 1;
         cursor: pointer;
     }
@@ -33,52 +33,60 @@
 <div class="carousel-indicators">
 <div class="carousel slide">
 <div id="filters">
-    <div class="filter">
+    <div class="filter carousel-item">
         <i class="fa-solid fa-fire"></i>
         <p>Trending</p>
     </div>
-    <div class="filter">
+    <div class="filter carousel-item">
         <i class="fa-solid fa-bed"></i>        
         <p>Rooms</p>
     </div>
-    <div class="filter">
+    <div class="filter carousel-item">
         <i class="fa-solid fa-city"></i>        
         <p>Iconic Cities</p>
     </div>
-    <div class="filter">
+    <div class="filter carousel-item">
         <i class="fa-solid fa-mountain"></i>
         <p>Mountain</p>
     </div>
-    <div class="filter">
+    <div class="filter carousel-item">
         <i class="fa-solid fa-chess-rook"></i>
         <p>Castles</p>
     </div>
-    <div class="filter">
+    <div class="filter carousel-item">
         <i class="fa-solid fa-person-swimming"></i>
         <p>Amazing Pools</p>
     </div>
-    <div class="filter">
+    <div class="filter carousel-item">
         <i class="fa-solid fa-campground"></i>
         <p>Camping</p>
     </div>
-    <div class="filter">
+    <div class="filter carousel-item">
         <i class="fa-solid fa-tractor"></i>
         <p>Farms</p>
     </div>
-    <div class="filter">
+    <div class="filter carousel-item">
         <i class="fa-solid fa-snowflake"></i>
         <p>Artic</p>
     </div>
-    <div class="filter">
+    <div class="filter carousel-item">
         <i class="fa-solid fa-ferry"></i>
         <p>Houseboats</p>
     </div>
-    <div class="filter">
+    <div class="filter carousel-item">
         <i class="fa-solid fa-person-skiing"></i>
         <p>Skiing</p>
     </div>
     </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
     <div id="switch-toggle">
     <div class="form-check-reverse form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
