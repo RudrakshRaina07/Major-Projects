@@ -16,20 +16,41 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="image">Upload Image</label>
-                    <input name="listing[image]" class="form-control" type="file"/>
+                    <input name="listing[image]" class="form-control" type="file" />
                 </div>
                 <div class="row ">
                     <div class="mb-3 col-md-4">
                         <label class="form-label" for="price">Price</label>
-                        <input name="listing[price]" placeholder="Enter price" class="form-control"
-                            required />
+                        <input name="listing[price]" placeholder="Enter price" class="form-control" required />
                         <div class="invalid-feedback">Price should be valid</div>
                     </div>
                     <div class="mb-3 col-md-8">
-                        <label class="form-label" for="country">Country</label>
-                        <input type="text" name="listing[country]" placeholder="Enter country" class="form-control"
+                        <label class="form-label" for="category">Choose Category</label>
+                        <input type="text" name="listing[category]" placeholder="Enter country" class="form-control"
                             required />
-                        <div class="invalid-feedback">Country name should be valid</div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">Trending</a></li>
+                                <li><a class="dropdown-item">Rooms</a></li>
+                                <li><a class="dropdown-item">Iconic Cities</a></li>
+                                <li><a class="dropdown-item">Mountains</a></li>
+                                <li><a class="dropdown-item">Castles</a></li>
+                                <li><a class="dropdown-item">Amazing Pools</a></li>
+                                <li><a class="dropdown-item">Camping</a></li>
+                                <li><a class="dropdown-item">Farms</a></li>
+                                <li><a class="dropdown-item">Artic</a></li>
+                                <li><a class="dropdown-item">Houseboats</li>
+                                <li><a class="dropdown-item">Skiing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label class="form-label" for="country">Country</label>
+                        <div class="invalid-feedback">Country should be valid</div>
                     </div>
                 </div>
 
