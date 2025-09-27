@@ -25,26 +25,21 @@
                         <div class="invalid-feedback">Price should be valid</div>
                     </div>
                     <div class="mb-3 col-md-8">
-                        <label class="form-label" for="category">Choose Category</label> 
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button"name="listing[category]" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li>Trending</li>
-                                <li>Rooms</li>
-                                <li>Iconic Cities</li>
-                                <li>Mountains</li>
-                                <li>Castles</li>
-                                <li>Amazing Pools</li>
-                                <li>Camping</li>
-                                <li>Farms</li>
-                                <li>Artic</li>
-                                <li>Houseboats</li>
-                                <li>Skiing</li>
-                            </ul>
-                        </div>
+                        <label class="form-label" for="category">Choose Category</label>
+                        <select class="form-select" aria-label="Default select example" name="listing[category]" required>
+                            <option selected>Choose a category</option>
+                            <option value="1">Trending</option>
+                            <option value="2">Rooms</option>
+                            <option value="3">Iconic Cities</option>
+                            <option value="1">Mountains</option>
+                            <option value="2">Castles</option>
+                            <option value="3">Amazing Pools</option>
+                            <option value="1">Camping</option>
+                            <option value="2">Farms</option>
+                            <option value="3">Artic</option>
+                            <option value="2">Houseboats</option>
+                            <option value="3">Skiing</option>
+                        </select>
                     </div>
                     <div class="mb-3 col-md-8">
                         <label class="form-label" for="country">Country</label>
