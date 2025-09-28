@@ -19,6 +19,9 @@ router
 //  NEW ROUTE
 router.get("/new",isLoggedIn, listingController.renderNewForm);
 
+// FILTER ROUTE
+router.get("/category", validateError, wrapAsync(listingController.renderFilterForm));
+
 router
     .route("/:id")
     // SHOW ROUTE
@@ -31,7 +34,6 @@ router
 // EDIT ROUTE
 router.get("/:id/edit",isLoggedIn, validateError, wrapAsync(listingController.renderEditForm));
 
-// FILTER ROUTE
-router.get("/:id/category", validateError, wrapAsync(listingController.renderFilterForm));
+
 
 module.exports = router;
