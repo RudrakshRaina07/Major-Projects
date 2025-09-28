@@ -82,8 +82,8 @@ module.exports.renderFilterForm = async (req,res) => {
     let { category } = req.query;
     console.log(category);
    
-    if(listing.category === category){
+
         const allListings = await Listing.find({category: category});
         res.render("listings/index.ejs", {allListings});
-    }
+    
 };
