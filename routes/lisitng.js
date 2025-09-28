@@ -32,6 +32,6 @@ router
 router.get("/:id/edit",isLoggedIn, validateError, wrapAsync(listingController.renderEditForm));
 
 // FILTER ROUTE
-router.get("/:id/category", validateError, wrapAsync(listingController.renderFilterForm));
+router.get("/category", validateError, wrapAsync(listingController.renderFilterForm));
 
 module.exports = router;
