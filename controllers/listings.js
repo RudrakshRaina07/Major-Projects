@@ -79,11 +79,12 @@ module.exports.destroyListing = async (req,res) => {
 };
 
 module.exports.renderFilterForm = async (req,res) => {
+    let { id } = req.params;
     let { category } = req.query;
     console.log(category);
-   
-
+    const listing = await Listing.findById(id);
+    if(listing.category === category){
         const allListings = await Listing.find({category: category});
         res.render("listings/index.ejs", {allListings});
-    
+    }
 };
