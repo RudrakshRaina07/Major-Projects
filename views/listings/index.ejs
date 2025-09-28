@@ -1,7 +1,7 @@
 <% layout("/layouts/boilerplate.ejs"); %>
 
 <style>
-    #filters{
+    #filters{ 
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
@@ -12,11 +12,11 @@
         margin-right: 1.5rem;
         opacity: 0.7;
     }
-    .filter:hover {
+    .filter:hover { 
         opacity: 1;
         cursor: pointer;
     }
-    .filters p{
+    .filters p{ 
         font-size: 0.8rem;
     }
     .tax-info{
@@ -32,48 +32,48 @@
 </style>
 
 <div id="filters">
-    <div class="filter">
-        <i class="fa-solid fa-fire"></i>
+     <div class="filter">
+        <a href="/listings/:id/filter"><i class="fa-solid fa-fire"></i></a>
         <p>Trending</p>
     </div>
     <div class="filter">
-        <a><i class="fa-solid fa-bed"></i></a>        
+        <a href="/listings/:id/filter" ><i class="fa-solid fa-bed"></i></a>       
         <p>Rooms</p>
     </div>
     <div class="filter">
-        <i class="fa-solid fa-city"></i>        
+        <a href="/listings/:id/filter" ><i class="fa-solid fa-city"></i></a>        
         <p>Iconic Cities</p>
     </div>
     <div class="filter">
-        <i class="fa-solid fa-mountain"></i>
+        <a href="/listings/:id/filter" ><i class="fa-solid fa-mountain"></i></a>
         <p>Mountain</p>
     </div>
     <div class="filter">
-        <i class="fa-solid fa-chess-rook"></i>
+        <a href="/listings/:id/filter" ><i class="fa-solid fa-chess-rook"></i></a>
         <p>Castles</p>
     </div>
     <div class="filter">
-        <i class="fa-solid fa-person-swimming"></i>
+        <a href="/listings/:id/filter" ><i class="fa-solid fa-person-swimming"></i></a>
         <p>Amazing Pools</p>
     </div>
     <div class="filter">
-        <i class="fa-solid fa-campground"></i>
+        <a href="/listings/:id/filter" ><i class="fa-solid fa-campground"></i></a>
         <p>Camping</p>
     </div>
     <div class="filter">
-        <i class="fa-solid fa-tractor"></i>
+        <a href="/listings/:id/filter" ><i class="fa-solid fa-tractor"></i></a>
         <p>Farms</p>
     </div>
     <div class="filter">
-        <i class="fa-solid fa-snowflake"></i>
+        <a href="/listings/:id/filter" ><i class="fa-solid fa-snowflake"></i></a>
         <p>Artic</p>
     </div>
     <div class="filter">
-        <i class="fa-solid fa-ferry"></i>
+        <a href="/listings/:id/filter" ><i class="fa-solid fa-ferry"></i></a>
         <p>Houseboats</p>
     </div>
     <div class="filter">
-        <i class="fa-solid fa-person-skiing"></i>
+        <a href="/listings/:id/filter" ><i class="fa-solid fa-person-skiing"></i></a>
         <p>Skiing</p>
     </div>
     <div id="switch-toggle">
