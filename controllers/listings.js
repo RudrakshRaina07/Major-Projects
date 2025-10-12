@@ -85,9 +85,13 @@ module.exports.renderFilterForm = async (req,res) => {
     res.render("listings/index.ejs", {allListings});
 };
 
-module.exports.searchListing = async (req,res) => {
+module.exports.searchListing = async (req,res,event) => {
+    event.preventdefalut();
     console.log(req.query);
     console.log("next");
     console.log(req.body);
+    console.dir(req.query);
+    console.dir("next");
+    console.dir(req.body);
     res.send("welcome");
 }
