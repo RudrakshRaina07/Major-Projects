@@ -22,6 +22,9 @@ router.get("/new",isLoggedIn, listingController.renderNewForm);
 // FILTER ROUTE
 router.get("/category", validateError, wrapAsync(listingController.renderFilterForm));
 
+// SEARCH ROUTE
+router.get("/find", validateError, wrapAsync(listingController.searchListing));
+
 router
     .route("/:id")
     // SHOW ROUTE

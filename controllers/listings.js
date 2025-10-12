@@ -84,3 +84,8 @@ module.exports.renderFilterForm = async (req,res) => {
     const allListings = await Listing.find({category: category});
     res.render("listings/index.ejs", {allListings});
 };
+
+module.exports.searchListing = async (req,res) => {
+    console.log(req.query);
+    res.send("welcome");
+}
