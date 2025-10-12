@@ -87,5 +87,7 @@ module.exports.renderFilterForm = async (req,res) => {
 
 module.exports.searchListing = async (req,res) => {
     console.log(req.query);
+    console.log("next");
+    console.log(req.body);
     res.send("welcome");
 }
